@@ -161,3 +161,71 @@ section{
 #warner img:hover{
     transform: translateY(-10px);
 }
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #warner img {
+        width: 250px;
+    }
+
+    #capa {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #capa img {
+        width: 150px;
+    }
+
+    #button {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #button a,
+    #button button {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    #capa p {
+        font-size: 18px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    #warner img {
+        width: 200px;
+    }
+}
+
+@media (max-width:450px){
+    header nav img{
+        width: 30px;
+    }
+}
