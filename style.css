@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: rgb(0,0,0,0.7);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 25px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+header img:hover{
+    transform: translateX(-5px);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a{
+    color: #f2f2f2;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+nav a:hover{
+    border-bottom: 0.5px solid rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
+    transform: translateY(-5px);
+}
+
+nav img {
+    width: 24px;
+}
+
+nav img:hover{
+    transform: translateY(-5px);
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#capa{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 500px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#capa img{
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease;
+}
+
+#capa img:hover{
+    transform: translateX(10px);
+}
+
+#capa p{
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+#button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+#button a {
+    text-decoration: none;
+    height: 50px;
+    color: #f2f2f2;
+    background: #011624;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-10deg);
+    font-weight: 500;
+    transition: 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#button a:hover{
+    opacity: 0.8;
+}
+
+#button button{
+    border: 1px solid #68ccc4;
+    background: transparent;
+    height: 50px;
+    width: 50%;
+    transform: skew(-10deg);
+    color: #f2f2f2;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#button button:hover{
+    opacity: 0.8;
+}
+
+#warner img {
+    width: 350px;
+    transition: 0.5s ease;
+}
+
+#warner img:hover{
+    transform: translateY(-10px);
+}
