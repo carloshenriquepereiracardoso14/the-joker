@@ -98,7 +98,7 @@ section{
     width: 200px;
     height: auto;
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 15px;
     transition: 0.5s ease;
 }
 
@@ -156,6 +156,7 @@ section{
 #warner img {
     width: 350px;
     transition: 0.5s ease;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
 }
 
 #warner img:hover{
